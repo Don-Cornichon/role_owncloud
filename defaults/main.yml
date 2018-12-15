@@ -1,6 +1,6 @@
-owncloud_name: "owncloud"
-owncloud_version: "10.0"
-owncloud_domain: "localhost"
-owncloud_admin_username: "admin"
-owncloud_http_port: "8080"
-owncloud_path: "/home/workspace/owncloud"
+owncloud_name: owncloud
+owncloud_version: 10.0.10
+owncloud_domain: localhost
+owncloud_admin_username: admin
+owncloud_http_port: 8080
+owncloud_path: /home/workspace/owncloud

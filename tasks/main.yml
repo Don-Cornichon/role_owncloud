@@ -1,14 +1,14 @@
 - name: Ensure that the root repository is well installed
   file:
     path: "{{ owncloud_path }}"
-    state: repository
+    state: directory
     recurse: yes
 
 - name: copying of Owncloud docker-composer to "{{ owncloud_path }}"
   template:
-     src: docker-compose_owncloud.j2
+     src: docker_compose_owncloud.j2
      dest: "{{ owncloud_path }}/docker-compose_owncloud"
 
 - name: installation of docker owncloud
-  shell: "docker-compose -f {{ owncloud_path }}/docker-compose_owncloud up -d"
+  shell: "docker-compose -f {{ owncloud_path }}/docker_compose_owncloud up -d"
     
